@@ -16,7 +16,7 @@ html {
 
 /*NAV BAR*/
 .search {
-  background-color: #fff159;
+  background-color: #ffa62e;
   height: 100%;
 }
 .form {
@@ -30,23 +30,86 @@ html {
   margin-left: 0.5rem;
   border-radius: 0.4rem;
 }
+@media only screen and (min-width: 769px) {
+  .input-rect {
+    width: 40rem;
+    height: 4rem;
+  }
+}
 .search button {
   margin: 0 1rem;
   font-weight: 700;
   padding: 0 1rem;
 }
-
+@media only screen and (min-width: 769px) {
+  .search button {
+    width: 10rem;
+    border-radius: 0.4rem;
+  }
+}
 /*TEMPLATE*/
-#item-template {
+.results-count {
+  font-size: 1.8rem;
+}
+.result-title {
+  font-size: 1.8rem;
+  margin: 2rem;
+}
+@media only screen and (min-width: 769px) {
+  .result-title {
+    margin: 2rem 40rem;
+  }
+}
+.results-prod {
   display: flex;
   flex-direction: column;
-  height: 40rem;
 }
 .item {
+  width: 90%;
+  margin: 0 auto 6rem;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 0.8rem;
+}
+@media only screen and (min-width: 769px) {
+  .item {
+    width: 60%;
+  }
+  .link-prod {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.item:hover {
+  box-shadow: -1px -8px 39px -2px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -1px -8px 39px -2px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px -8px 39px -2px rgba(0, 0, 0, 0.37);
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+.img-producto {
+  width: 20rem;
   height: 20rem;
 }
 
-.img-producto {
-  max-width: 100%;
-  max-height: 100%;
+.info-prod {
+  background-color: #ffd59b;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.info-prod h3 {
+  border-bottom: 3px solid #000;
+  padding: 1rem 0;
+}
+.info-prod p {
+  text-align: start;
+  margin: 2rem;
+  font-weight: 400;
+}
+.info-prod p:last-child {
+  text-align: end;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 1rem 1rem;
 }

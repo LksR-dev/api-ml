@@ -19,35 +19,42 @@
   </head>
   <body>
     <nav class="container search">
-      <div class="flex">
       <form class="form">
-        <input type="text" name="search" class="input-rect"placeholder="Televisores, computadoras..." required />
+        <input
+          type="text"
+          name="search"
+          class="input-rect"
+          placeholder="Buscar productos, marcas y más"
+          required
+        />
         <button>Buscar</button>
       </form>
     </nav>
-    
-    <div class="container results">
-      <h3>Resultados: <span class="results-count"></span></h3>
+
+    <div class="container">
+      <h3 class="result-title">
+        Resultados: <span class="results-count"></span>
+      </h3>
+      <div class="results-prod"></div>
     </div>
 
     <template id="item-template">
-        <article class="item">
-            <a  class="link-prod" target="_blank">
-              <!--PRODUCT IMG-->
-              <img src="" alt="" class="img-producto">
-              <!--CLOSE PRODUCT IMG-->
+      <article class="item">
+        <a class="link-prod" href="" target="_blank">
+          <!--PRODUCT IMG-->
+          <img src="" alt="" class="img-producto" />
+          <!--CLOSE PRODUCT IMG-->
 
-              <!--INFO PROD-->
-              <div class="info-prod">
-                <h3></h3>
-                <p class="condition"></p>
-                <p class="soldQuantity"></p>
-              </div>
-              <!--CLOSE INFO PROD-->
-
-              <p class="price"></p>
-            </a>
-        </article>
+          <!--INFO PROD-->
+          <div class="info-prod">
+            <h3></h3>
+            <p class="condition"></p>
+            <p>Vendidos: <span class="soldQuantity"></span></p>
+            <p class="price"></p>
+          </div>
+          <!--CLOSE INFO PROD-->
+        </a>
+      </article>
     </template>
   </body>
 </html>

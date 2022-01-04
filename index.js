@@ -8,7 +8,7 @@ function showResults(results) {
   removeResults();
 
   const templateEl = document.querySelector("#item-template");
-  const itemEl = templateEl.content.querySelector(".item");
+  const container = document.querySelector(".results-prod");
 
   //Cantidad de resultados de busqueda
   const resultsCount = document.querySelector(".results-count");
@@ -27,6 +27,7 @@ function showResults(results) {
     const conditionEl = templateEl.content.querySelector(".condition");
     if (prod.condition == "new") {
       conditionEl.textContent = "Nuevo";
+      conditionEl.style.fontWeight = "bold";
     } else {
       conditionEl.textContent = "Usado";
     }
@@ -39,9 +40,15 @@ function showResults(results) {
     const priceEl = templateEl.content.querySelector(".price");
     priceEl.textContent = "$" + prod.price;
 
+    //Add Link
+    const aEl = templateEl.content.querySelector(".link-prod");
+    aEl.href = prod.permalink;
+    aEl.style.textDecoration = "none";
+    aEl.style.color = "#000";
+
     //Clone
-    // const clone = document.importNode(templateEl.content, true);
-    // itemEl.appendChild(clone);
+    const clone = document.importNode(templateEl.content, true);
+    container.appendChild(clone);
   }
 }
 
