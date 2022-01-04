@@ -1,0 +1,52 @@
+/*GLOBAL*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+}
+
+/*NAV BAR*/
+.search {
+  background-color: #fff159;
+  height: 100%;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.input-rect {
+  height: 3rem;
+  width: 100%;
+  margin-left: 0.5rem;
+  border-radius: 0.4rem;
+}
+.search button {
+  margin: 0 1rem;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+/*TEMPLATE*/
+#item-template {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+}
+.item {
+  height: 20rem;
+}
+
+.img-producto {
+  width: 40%;
+  height: 100%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------STYLE CSS------------------>
+    <link rel="stylesheet" href="./index.css" />
+    <!------------SCRIPT------------------>
+    <script async src="./index.js"></script>
+    <!------------GOOGLE FONTS------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>API ML</title>
+  </head>
+  <body>
+    <nav class="container search">
+      <div class="flex">
+      <form class="form">
+        <input type="text" name="search" class="input-rect"placeholder="Televisores, computadoras..." required />
+        <button>Buscar</button>
+      </form>
+    </nav>
+    
+    <div class="container results">
+      <h3>Resultados: <span class="results-count"></span></h3>
+    </div>
+
+    <template id="item-template">
+        <article class="item">
+            <a  class="link-prod" target="_blank">
+              <!--PRODUCT IMG-->
+              <img src="" alt="" class="img-producto">
+              <!--CLOSE PRODUCT IMG-->
+
+              <!--INFO PROD-->
+              <div class="info-prod">
+                <h3></h3>
+                <p class="estado"></p>
+                <p class="vendidos"></p>
+              </div>
+              <!--CLOSE INFO PROD-->
+
+              <p class="price"></p>
+            </a>
+        </article>
+    </template>
+  </body>
+</html>
